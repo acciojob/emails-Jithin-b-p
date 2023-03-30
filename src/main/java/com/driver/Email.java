@@ -35,11 +35,11 @@ public class Email {
 
             }else{
 
-                System.out.println("The new password is not valid!!");
+                System.out.println("The new password is not valid!");
             }
         }else{
 
-            System.out.println("The given password does not match current password.!");
+            System.out.println("The given password does not match current password!");
         }
     }
     public boolean isValid(String newPassword){
@@ -50,7 +50,7 @@ public class Email {
         boolean digit = false;
         boolean specialChara = false;
 
-        if(newPassword.length() < 8){
+        if(newPassword.length() >= 8){
 
             lengthOfPassword = true;
 
